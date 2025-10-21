@@ -5,9 +5,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-font-family: "Ubuntu", sans-serif;
+  --secondary-font-family: "Amatic SC", sans-serif;
+  --red-color: rgb(206, 18, 18);
+  --black-color: rgb(33, 37, 41);
+  --grey-color: rgb(127, 127, 144);
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
- 
+  font-family: var(--primary-font-family);
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }

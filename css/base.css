@@ -11,6 +11,8 @@
   --red-color: rgb(206, 18, 18);
   --black-color: rgb(33, 37, 41);
   --grey-color: rgb(127, 127, 144);
+  --grey-background-color: rgb(238, 238, 238);
+  --white-color:#fff
 }
 
 html {
@@ -25,6 +27,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section {
+  padding: 90px 25px;
 }
 
 @media screen and (max-width: 768px) {

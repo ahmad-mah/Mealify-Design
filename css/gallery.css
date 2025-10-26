@@ -1,0 +1,42 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.gallery .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gallery__title {
+  font-size: 14px;
+  color: var(--grey-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+}
+.gallery__subtitle {
+  font-size: 50px;
+  font-family: var(--secondary-font-family);
+}
+
+.gallery__subtitle span {
+  color: var(--red-color);
+}
+
+.gallery__masonary {
+columns: 3;
+column-gap: 10px;
+}
+
+.gallery__masonary img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+
+}

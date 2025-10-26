@@ -1,0 +1,113 @@
+.chefs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.chefs .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chefs__title {
+  font-size: 14px;
+  color: var(--grey-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+}
+.chefs__subtitle {
+  font-size: 50px;
+  font-family: var(--secondary-font-family);
+}
+
+.chefs__subtitle span {
+  color: var(--red-color);
+}
+
+.chefs__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+}
+
+.chef__card {
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chef__img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.chef__img {
+  width: 100%;
+  height: auto;
+  flex: 2;
+}
+
+.chef__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  gap: 10px;
+}
+
+.chef__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.chef__specialty {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.chef__description {
+  font-size: 15px;
+  color: var(--grey-color);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.chef__social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff4d;
+  padding: 15px;
+  border-radius: 5px;
+  gap: 20px;
+
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  transition: right 0.4s ease;
+}
+.chef__social i {
+  font-size: 18px;
+}
+
+.chef__card:hover {
+  transform: scale(1.05);
+}
+
+.chef__card:hover .chef__social {
+  transition-delay: .3s;
+  top: 30px;
+  right: 15px;
+}
